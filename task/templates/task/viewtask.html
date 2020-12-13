@@ -1,0 +1,17 @@
+{% extends 'task/base.html' %}
+{% block content %}
+
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-10">
+            <h1> {{ task.title }} </h1>
+            <a href="{% url 'edittask' task.id %}">Edit</a>
+        </div>
+    </div>
+
+
+<br> <br> {{ task.description }}
+<br> <br>
+
+
+
+{% endblock %}
